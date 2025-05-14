@@ -1,0 +1,28 @@
+/* App styles */
+
+/* Grid pattern background */
+.bg-grid-pattern {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Add cursor styles for transform wrapper */
+.transform-wrapper.react-transform-component-content--dragging,
+.transform-wrapper[data-dragging="true"] {
+  cursor: pointer !important;
+}
+
+.react-transform-wrapper:active,
+.transform-wrapper:active {
+  cursor: pointer !important;
+}
+
+/* Apply pointer cursor to any element with dragging attribute */
+[data-dragging="true"] {
+  cursor: pointer !important;
+}
